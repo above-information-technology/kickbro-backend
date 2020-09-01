@@ -7,7 +7,7 @@ app.use(express.json());
 
 const port = process.env.PORT || 3000
 
-app.get('/email', async (req, res) => {
+app.post('/email', async (req, res) => {
     const email = new Email(req.body)
 
     try {
