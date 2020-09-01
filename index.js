@@ -1,9 +1,13 @@
 const express = require('express');
+const cors = require('cors');
 const Email = require('./models/email');
 require('./db/mongoose');
 
 const app = express();
 app.use(express.json());
+app.use(cors({
+    origin: 'http://localhost:3000'
+  }));
 
 const port = process.env.PORT || 3000
 
