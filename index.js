@@ -6,7 +6,7 @@ require('./db/mongoose');
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: 'https://kickbro-join.herokuapp.com/'
 }));
 
 const port = process.env.PORT || 3000
