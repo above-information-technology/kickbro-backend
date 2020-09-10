@@ -7,14 +7,14 @@ const emailSchema = new Schema({
         type: String,
         required: true
     },
-    lowerEmail: {
-        type: String,
-        required: true
-    },
     validate(email) {
         if (!validator.isEmail(email)) {
             throw new Error("Invalid email")
         }
+    },
+    lowerEmail: {
+        type: String,
+        required: true
     }
 })
 
