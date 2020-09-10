@@ -22,7 +22,7 @@ app.post('/email', async (req, res) => {
         return res.status(201).send('Success')
     } catch (e) {
         return res.status(404).send(e.message)
-    }
+    } 
 })
 
 app.listen(port, () => {
