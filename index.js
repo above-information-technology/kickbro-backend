@@ -5,9 +5,7 @@ require('./db/mongoose');
 
 const app = express();
 app.use(express.json());
-app.use(cors({
-    origin: '*'
-}));
+app.use(cors());
 
 const port = process.env.PORT || 3000
 
