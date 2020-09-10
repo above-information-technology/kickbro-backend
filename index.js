@@ -17,7 +17,7 @@ app.post('/email', async (req, res) => {
     const email = new Email(req.body)
     try {
         await email.save()
-        return res.status(201).send('Success')
+        return res.status(201).send('Success aaaa')
     } catch (e) {
         return res.status(404).send(e.message)
     } 
